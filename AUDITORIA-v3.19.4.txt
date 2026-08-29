@@ -1,0 +1,19 @@
+AUDITORIA — ValeDouro v3.19.4
+Data: 2026-08-29
+
+RESULTADO
+- Cards .npc-card: 72
+- Cards com imagem: 72
+- Referências de imagem ausentes: 0
+- Arte Drazhen restaurada: SIM
+- Drazhen arquivo: assets/artes/drazhen-volkar.webp
+- Drazhen dimensões: 1024 x 1536
+- Categoria Malachar: Kratovia|Guerra Kratoviana
+- Malachar aparece em Liceu por metadado: NÃO
+- Resíduos “Sangue da Guerra” em index/compendio/kratovia: 0
+- Versão no <title>: OK
+- Versão no cabeçalho: OK
+- Versão no rodapé: OK
+- data/compendio.json válido: SIM
+- data/kratovia.json válido: SIM
+- Manifesto de artes regenerado: SIM
