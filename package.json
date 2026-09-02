@@ -1,0 +1,52 @@
+{
+  "name": "valedouro",
+  "version": "2.0.1",
+  "description": "ValeDouro — Mestre Virtual",
+  "main": "electron-main.js",
+  "author": "DGandra",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win nsis portable"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "br.com.valedouro.mestrevirtual",
+    "productName": "ValeDouro",
+    "asar": true,
+    "files": [
+      "electron-main.js",
+      "index.html",
+      "assets/**/*",
+      "css/**/*",
+      "js/**/*",
+      "compendio/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "artifactName": "ValeDouro-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "ValeDouro"
+    }
+  }
+}
